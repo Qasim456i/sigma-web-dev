@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES</title>
+    <style>
+        /* ariable declaration in css */
+        /* it helps to add these colors in different part tof our website */
+        :root{
+            --color: blue;
+            --seccolor: rgb(135, 135, 203);
+            /* wecan also use other variables also */
+         --defop: 0.6;
+            --defpad: 23px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+            margin: 20px;
+            
+            
+
+        }
+        ul{
+            display: flex;
+        }
+  .nav{
+    background-color:var(--color);
+
+  }
+  .container{
+    background-color:  var(--seccolor);
+  }
+  ul li{
+    opacity: var(--defop);
+    /* making local variable */
+    /* it can oly be applied on this box */
+    --color: rgb(255, 0, 140);
+    border: 5px solid var(--color);
+    background-color:var(--seccolor,rgb(98, 255, 0));
+    
+  }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>About</li>
+            <li>services</li>
+            
+
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quibusdam ad nihil provident. Ducimus, ratione animi, saepe veniam tempora recusandae expedita ipsa inventore iure, provident officiis placeat quos autem laboriosam quaerat aspernatur. Culpa natus ipsam officiis, ea adipisci rem odio voluptatum qui dignissimos quos minima.
+    </div>
+    
+</body>
+</html>

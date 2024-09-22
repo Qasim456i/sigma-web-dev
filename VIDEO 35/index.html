@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON CSS SELECTORS</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        /* .box::first-line{
+            color: yellow;
+        } */
+         .boxes *{
+            color: blue;
+            border: 2px solid black;
+         }
+         /* this is another type of pseudo selctors */
+         /* p,a,.box these actions are called grouping */
+
+         /* p, a, .box, [data-color="primary"]{
+        margin-top: 25px;
+         } */
+          /* .box:nth-child(even){
+            background-color: red;
+          } */
+          /* .box:nth-last-child(2){
+            background-color: rgb(255, 255, 0);
+          } */
+          /* .boxes::before{
+          content: "harry is the great";
+          background-color: red;
+          }
+          .boxes::after{
+          content: "harry is the great";
+          background-color: red;
+          } */
+           /* ::selection{
+
+            color: aqua;background-color: black;
+
+           } */
+            .box::first-letter{
+                background-color: red;
+                color: blue;
+            }
+            input::placeholder{
+                color: rgb(41, 41, 48);
+                /* font-size: 56px; */
+            }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am a box</div>
+        <div class="box">hi i am a box</div>
+        <div class="box">hi i am a box</div>
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>

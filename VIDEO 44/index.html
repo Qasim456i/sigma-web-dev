@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRA EDIT WEB DESIGN</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+       nav{
+            display: flex;
+           justify-content: space-around;
+           align-items: center;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          
+        }
+        .logo img{
+            display: flex;
+            margin-top: 10px;
+            margin-left: -50px;
+            justify-content: center;
+
+        }
+       
+        .right{
+            margin-top: -20px;
+            
+        }
+        nav ul li{
+            cursor: pointer;
+            
+        }
+
+        .right ul {
+            display: flex;
+            
+            
+       gap: 30px;
+       margin-top: 60px;
+            list-style: none;
+        }
+        
+        .main div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 48px;
+            
+            line-height: 62px;
+            /* margin-right: 60px; */
+            /* margin-left: 200px */
+        }
+        .main div span{
+            font-weight: 700;
+        }
+        .main{
+            height: 100px;
+           
+            width: 100vw;
+            /* border: 2px solid black; */
+            /* font-size: 60px; */
+
+            
+            display: flex;
+            justify-content: center;
+          padding-top: 90px;
+            
+            
+        }
+        .auto div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            line-height: 1.3em;
+            text-align: center;
+        }
+        .auto{
+            /* border: 2px solid black; */
+           
+            width: 1000px;
+            height: 70px;
+            margin-left: 150px; 
+            display: flex;
+            justify-content: center;
+          
+           
+        }
+        .button{
+            height: 50px;
+            width: 300px;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 500px;
+            margin-top: 20px;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            
+            background-color: rgb(61, 182, 216);
+        }
+        .button div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            
+            font-weight: 700;
+        }
+        .grid{
+            /* border: 2px solid black; */
+            height: 800px;
+            width: 1000px;
+            margin-left: 140px;
+            margin-top: 40px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: 330px 330px 330px;
+            grid-template-rows: 175px 175px 175px 175px;
+            padding: 30px;
+        }
+        .items{
+            background-color: #f9f9f9;
+            height: 150px;
+            width: 300px;
+            /* border: 2px solid red; */
+            
+           
+        }
+        .but div{ font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           color: white;
+        }
+        .but{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 133px;
+            /* border: 2px solid black; */
+            margin-left: 85px;
+            border-radius: 0.4rem;
+           background-color: #5cb85c;
+           padding: 4px;
+            margin-top: 50px;
+            cursor: pointer;
+        }
+        .upper{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 250px){
+            .grid{
+                background-color: red;
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" height="56px" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                   
+                    <li>Product  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="" stroke-linejoin="straight" />
+                    </svg></li></span>
+                    <li>Pricing  <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li></span>
+                    <li>Resources <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li></span>
+                    <li>About us <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" color="#000000" fill="none">
+                        <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg></li></span>
+                    <li>Security and compliance </li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+        <div class="main">
+           <div>Download <span>UltraEdit</span> For Windows <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt=""></div>
+
+        </div>
+        <div class="auto">
+            <div>
+            Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.
+        </div>
+        </div>
+        <div class="button">
+            <div>DOWNLOAD MAC OR LINUX VERSION</div>
+        </div>
+      <div class="grid">
+        <div class="items item-1">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+        <div class="items">
+            <div class="upper">English</div>
+            <div class="but">
+                <div>Download 64-bit</div>
+            </div>
+        </div>
+      </div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MEDIA QUERIES</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        /* media query syntax */
+        /* @media not|only mediatype and (expressions )
+        css code */
+        @media only screen and (max-width: 455px) {
+        body{
+              background-color: rgb(25, 5, 244);
+            
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+        /* landscape (when width is more than height landscape will be applied )  */
+        @media screen and (orientation :landscape) {
+            body{
+                border: 2px solid purple;
+            }
+            
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            padding: 3px;
+            margin: 3px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hi i am a body and my background color is red
+
+    </div>
+    <di class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        
+    </di>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            /* it will move to center without chaging its horizental position */
+            align-items: center;
+            flex-direction: row;
+            /* it willtake the wrapped one to te center and is used for more than one line */
+            align-content: center;
+            /* flex-wrap: wrap; */
+            /* there is no justify-item in flex box: ; */
+            /* there is also a wrap reverse property thaat will reverse the wrap */
+            /* justify-content: center; */
+            /* justify-content: first baseline; */
+            /* it will move it towards end */
+            /* justify-content: flex-end; */
+            /* and it in the start */
+            /* justify-content: flex-start; */
+            /* it will centre along with change in horizental position */
+           /* align-items: center; */
+           /* it will create space among them */
+           /* justify-content: space-around; */
+           /* this will also contain space but only between them not around */
+           /* justify-content: space-between; */
+           
+             height: 80vh;
+             /* flex direction colum and column reverse ,row and ro reverse */
+            /* it help to mention two properties in one */
+             /* flex-flow: row wrap; */
+             /* there are also properties of row and column gap */
+             /* gap: 30px;
+             gap: 10px 40px; */
+        }
+        
+        
+    .items{
+        height: 62px;
+        /* all the elements will take equal width */
+        /* flex-grow: 1; */
+        
+        width: 62px;
+        background-color: violet;
+        border: 2px solid black ;
+        margin: 4px;
+        
+    }
+    .items1{
+            /* the first element will take double  space */
+            /* flex-grow: 2; */
+            /* with the help of this property it will shrink 2 times faster than the other  molecules */
+            flex-shrink: 2;
+            /* it will allow to align this particular moleculle only */
+            align-self: flex-start;
+    }
+    /* default order of every element is zero and more the order given more it will come later */
+    .order-1{
+        order: 1;
+    }
+    .order-2{
+        order: 2;
+
+    }
+    .order-3{
+       order: 3;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+        <div class=" items items1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items ">4</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+       
+        
+       
+       
+    </div>
+    </main>
+</body>
+</html>

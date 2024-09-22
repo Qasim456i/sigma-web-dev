@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <style>
+        /* class selector */
+        .red{
+            background-color: green;
+        }
+        /* id selector */
+        #red{
+            background-color: red;
+        }
+        /* child selector */
+        div > p{
+            background-color: black;
+            color: aquamarine;
+        }
+        /* descendant selector */
+        div p{
+            background-color: black;
+            color: aquamarine;
+        }
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        /* pseudo selector */
+        a:visited{
+            color: black;
+        
+        }
+        a:active {
+            background-color: green;
+        }
+        a:hover{
+            background-color: rgb(224, 214, 104);
+        }
+        p:first-child{
+            background-color: blue;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>1st p</p>
+        <p>2nd p</p>
+    </div>
+    <div class="red">
+        hi whats your name?
+    </div>
+    <div id="red">
+        <p>
+        hi  my name is qasim
+    </p>
+    </div>
+    <div id="red">
+        <article>
+        <p>
+        hi  my name is qasim
+    </p>
+</article>
+    </div>
+    <a href="http://www.google.com">go to goodle</a>
+    
+</body>
+</html>

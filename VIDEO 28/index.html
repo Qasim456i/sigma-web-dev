@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            height: 444px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+           
+        }
+        /* position static property we cannot add top bottom for boxes until we use position relative*/
+        .box1{
+          
+            position: sticky;
+            /* position: absolute; */
+            /* due to absolute its ancestor will be html lines */
+            /* top: 0px; */
+
+            background-color: rgb(0, 255, 8);
+           
+            height: 111px;
+            padding: 0px;
+            margin: 0px;
+            top: 0px;
+           
+            /* position: relative; */
+            /* z index visualize or de visualize the overstacking of boxes */
+            /* z-index: 1; */
+        }
+        .box2{
+            /* position: fixed; */
+            /* it will fix the box even the user is scrolling */
+            /* bottom: 0px;
+            left: 6vw;
+            height: 111px; */
+            background-color: blueviolet;
+           /* position: relative; */
+           
+
+        }
+        .box3{background-color: brown;
+        
+        }
+        .box4{background-color: cadetblue;}
+    .parent{
+        
+        padding: 34px;
+        margin: 45px;
+        border: 2px solid purple;
+        /* now after setting it to absolute for every box this will be position relative */
+        /* position: absolute; */
+
+        /* Exception alert */
+        /* transform filter or perspective properties can also make an element appeared as positioned */
+       /* position: relative; */
+       /* due to this it will remain along its parents */
+       transform: translate(0);
+       filter: invert(0);
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        
+    </div>
+    
+</body>
+</html>

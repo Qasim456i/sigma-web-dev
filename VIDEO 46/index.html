@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <style>
+        .container{
+            background-color: rgb(223, 52, 52);
+            height: 30vh;
+            width: 50vw;
+
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+            /* animation-name: noway;
+            animation-duration: 1s;
+            animation-iteration-count: infinite; */
+            /* animation-iteration-count: infinte; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-play-state: paused;
+            /* animation-play-state: running; */
+            /* fill mode */
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: noway 1s ease-in-out 1s 2 backwards,
+                        harry2  1s ease-in-out 1s 2;
+            
+        }
+  /* for multiple animations */
+        @keyframes harry2{
+            0%{
+                transform: rotate(100deg);
+            }
+            /* 20%{
+                transform: rotate(200deg);
+            }
+            30%{
+                transform: rotate(300deg);
+            }
+            40%{
+                transform: rotate(400deg);
+            }
+            50%{
+                transform: rotate(500deg);
+            }
+            60%{transform: rotate(600deg);} */
+
+        }
+        @keyframes noway {
+            from{
+         background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translatex(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<!-- if u want to do simple animations then go with transitions but with the complex ones go with animations -->
