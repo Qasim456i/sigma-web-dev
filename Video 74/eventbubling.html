@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            background-color: red;
+            border: 2px solid black;
+            margin: 12px;
+            padding: 12px;
+            cursor: pointer;
+        }
+        .container{
+
+            margin: 14px;
+            padding: 14px;
+            background-color: antiquewhite;
+
+        }
+        .childcontainer{
+            margin: 14px;
+            padding: 14px;
+            background-color: rgb(30, 139, 198);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">I am a child</div>
+        </div>
+    </div>
+    <script>
+
+        document.querySelector(".child").addEventListener("click", (e)=>{
+            e.stopPropagation()//thid method will stop the bubling
+    alert("Dont hack us by right click please");
+});
+
+        document.querySelector(".childcontainer").addEventListener("click", (e)=>{
+            e.stopPropagation()
+    alert("Dont  click please");
+});
+        document.querySelector(".container").addEventListener("click", (e)=>{
+            e.stopPropagation()
+    alert("Dont hack us by right  please");
+
+});
+function getrandomColor(){
+
+let  var1=Math.random()*233;
+ let var2=Math.random()*224;
+ let var3=Math.random()*111;
+
+  return `rgb(${var1}, ${var2}, ${var3})`
+
+ }
+//        let a=  setInterval(()=>{//this is used to do a particular work for a particular time 
+            
+//             document.querySelector(".childcontainer").style.background=getrandomColor();
+
+//          },3000)
+//    console.log(a);
+
+//we use clear timeout  to clear the setitmeout and clear interval for set interval
+       let b=  setTimeout(()=>{//this is used to do a particular work for only once
+            
+            document.querySelector(".childcontainer").style.background=getrandomColor();
+
+         },1000)
+   console.log(a);
+       
+   
+    </script>
+    <!-- <button onclick="sayHello()">Click Me</button>
+
+    <script>
+      function sayHello() {
+        alert("Hello!");
+      }
+    </script> -->
+</body>
+</html>
